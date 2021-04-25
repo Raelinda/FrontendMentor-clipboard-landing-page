@@ -1,0 +1,214 @@
+/* Body Basics 
+=========== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Strong-Cyan-shadow: hsl(171, 66%, 39%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Light-Blue-Shadow: hsl(233, 100%, 64%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+    --Transparent-Grayish-Blue: hsla(201, 11%, 66%, 15%);
+}
+
+body {
+    color: var(--Grayish-Blue);
+    font-size: 1.125rem;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Typography 
+=========== */
+h1,
+h2 {
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--Dark-Grayish-Blue);
+}
+
+h1 {
+    font-size: 1.75rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 2em;
+}
+
+p {
+    margin: 1em auto;
+    width: 95%;
+
+}
+
+.btn {
+    display: block;
+    margin-top: 1.5em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-ios {
+    background: var(--Strong-Cyan);
+    border-radius: 100px;
+    box-shadow: 0 2px 0 2px var(--Strong-Cyan-shadow);
+    padding: .75em 0;
+    width: 100%;
+}
+
+.btn-ios:hover,
+.btn-ios:focus {
+    opacity: 65%;
+}
+
+.btn-mac {
+    background: var(--Light-Blue);
+    border-radius: 100px;
+    box-shadow: 0 2px 0 2px var(--Light-Blue-Shadow);
+    padding: .75em 0;
+    width: 100%;
+}
+
+.btn-mac:hover,
+.btn-mac:focus {
+    opacity: 65%;
+}
+
+/* Layout 
+=========== */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('images/bg-header-mobile.png') no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.header__title {
+    font-size: 2.2rem;
+    margin-top: 3rem;
+}
+
+/* Section-one */
+.desktop-img {
+    margin: 3rem 0 1rem;
+}
+
+/* Section-two */
+.devices-img {
+    margin-top: 2rem;
+}
+
+/* Section-three */
+
+.section-three h2 {
+    margin-top: 1.25em;
+}
+
+.blacklist-img {
+    margin-top: 3.5rem;
+}
+
+.text-img,
+.preview-img {
+    margin-top: 2rem;
+}
+.logos {
+    margin: 2rem 0 5rem;
+}
+.logos__img {
+    margin-top: 4rem;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    background: var(--Transparent-Grayish-Blue);
+    margin: 10rem 0 0;
+    width: 100%;
+    padding: 3em 0 0;
+}
+.logo-img--sm {
+    width: 20%;
+}
+.nav__list {
+    list-style: none;
+    padding: 0;
+    margin-top: 2em;
+}
+.nav__item a {
+    display: block;
+    text-decoration: none;
+    color: var(--Dark-Grayish-Blue);
+    margin-top: 1em;
+}
+.nav__item a:hover,
+.nav__item a:focus {
+    opacity: 65%;
+}
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 3rem auto;
+}
+.social-media>* {
+    margin: 0;
+}
+/* Media Query-TABLET 
+=====================*/
+
+/* Media Query-DESKTOP 
+======================*/
+/* Attributions */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
