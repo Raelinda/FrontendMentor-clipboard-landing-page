@@ -15,44 +15,56 @@
 </head>
 
 <body>
-<div class="container">
+
   <header>
-    <img src="images/logo.svg" alt="copyright symbol" class="logo-img">
-    <h1 class="header__title">A history of everything you copy</h1>
-    <p>
-      Clipboard allows you to track and organize everything you
-      copy. Instantly access your clipboard on all your devices.
-    </p>
-    <a href="#" class="btn btn-ios">Download for iOS</a>
-    <a href="#" class="btn btn-mac">Download for Mac</a>
+    <div class="container">
+      <img src="images/logo.svg" alt="copyright symbol" class="logo-img">
+      <h1 class="header__title">A history of everything you copy</h1>
+      <p>
+        Clipboard allows you to track and organize everything you
+        copy. Instantly access your clipboard on all your devices.
+      </p>
+      <div class="buttons">
+        <a href="#" class="btn btn-ios">Download for iOS</a>
+        <a href="#" class="btn btn-mac">Download for Mac</a>
+      </div>
+    </div>
   </header>
   <main class="main">
     <section class="section-one">
+      <div class="container">
       <h1 class="section__title">Keep track of your snippets</h1>
       <p>
         Clipboard instantly stores any item you copy in the cloud,
         meaning you can access your snippets immediately on all your
         devices. Our Mac and iOS apps will help you organize everything.
       </p>
-      <img src="images/image-computer.png" alt="desktop computer" class="desktop-img">
-      <aside class="sidebar">
-        <div class="sidebar__section">
-          <h2 class="sidebar__title">Quick Search</h2>
-          <p class="sidebar__text">Easily search your snippets by content, category, web address, application, and more.
-          </p>
+      <div class="section-one">
+        <div class="section-one--desktop">
+          <img src="images/image-computer.png" alt="desktop computer" class="desktop-img">
+          <aside class="sidebar">
+            <div class="sidebar__section">
+              <h2 class="sidebar__title">Quick Search</h2>
+              <p class="sidebar__text">Easily search your snippets by content, category, web address, application, and more.
+              </p>
+            </div>
+            <div class="sidebar__section">
+              <h2 class="sidebar__title">iCloud Sync</h2>
+              <p class="sidebar__text">Instantly saves and syncs snippets across all your devices.</p>
+            </div>
+            <div class="sidebar__section">
+              <h2 class="sidebar__title">Complete History</h2>
+              <p class="sidebar__text">Retrieve any snippets from the first moment you started using the app.</p>
+            </div>
+          </aside>
         </div>
-        <div class="sidebar__section">
-          <h2 class="sidebar__title">iCloud Sync</h2>
-          <p class="sidebar__text">Instantly saves and syncs snippets across all your devices.</p>
-        </div>
-        <div class="sidebar__section">
-          <h2 class="sidebar__title">Complete History</h2>
-          <p class="sidebar__text">Retrieve any snippets from the first moment you started using the app.</p>
-        </div>
-      </aside>
+      </div>
+    </div>
     </section>
+    
+    
     <section class="section-two">
-
+    <div class="container">
       <h2 class="section__title">Access Clipboard anywhere</h2>
 
       <p>
@@ -60,9 +72,11 @@
         snippets in a few simple clicks.
       </p>
       <img src="images/image-devices.png" alt="mobile devices" class="devices-img">
+    </div>
     </section>
 
     <section class="section-three">
+      <div class="container">
       <h1 class="section__title">Supercharge your workflow</h1>
       <p>We’ve got the tools to boost your productivity.</p>
       <div class="flex">
@@ -82,7 +96,7 @@
           <p>Quick preview of all snippets on your Clipboard for easy access.</p>
         </div>
       </div>
-      <div class="flex logos">
+      <div class="logos">
         <img src="images/logo-google.png" alt="google logo" class="logos__img">
         <img src="images/logo-ibm.png" alt="i.b.m. logo" class="logos__img">
         <img src="images/logo-microsoft.png" alt="microsoft logo" class="logos__img">
@@ -94,30 +108,38 @@
         Available for free on the App Store. Download for Mac or iOS, sync with iCloud
         and you’re ready to start adding to your clipboard.
       </p>
-      <div class="flex">
+      <div class="buttons">
         <a href="#" class="btn btn-ios">Download for iOS</a>
         <a href="#" class="btn btn-mac">Download for Mac</a>
       </div>
+    </div>
     </section>
   </main>
   <footer>
-    <img src="images/logo.svg" alt="copyright symbol" class="logo-img--sm">
-    <nav class="navbar">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#">FAQs</a></li>
-        <li class="nav__item"><a href="#">Contact Us</a></li>
-        <li class="nav__item"><a href="#">Privacy Policy</a></li>
-        <li class="nav__item"><a href="#">Press Kit</a></li>
-        <li class="nav__item"><a href="">Install Guide</a></li>
-      </ul>
-    </nav>
-<div class="social-media">
-  <img src="images/icon-facebook.svg" alt="facebook logo" class="facebook">
-  <img src="images/icon-twitter.svg" alt="twitter logo" class="twitter">
-  <img src="images/icon-instagram.svg" alt="instagram logo" class="instagram">
-
+    <div class="footer__content">
+      <img src="images/logo.svg" alt="copyright symbol" class="logo-img--sm">
+      <nav class="navbar">
+        <ul class="nav__list">
+          <div class="nav__section">
+            <li class="nav__item"><a href="#">FAQs</a></li>
+            <li class="nav__item"><a href="#">Contact Us</a></li>
+          </div>
+          <div class="nav__section">
+            <li class="nav__item"><a href="#">Privacy Policy</a></li>
+            <li class="nav__item"><a href="#">Press Kit</a></li>
+          </div>
+          <div class="nav__section">
+            <li class="nav__item"><a href="">Install Guide</a></li>
+          </div>
+        </ul>
+      </nav>
+      <div class="social-media">
+        <img src="images/icon-facebook.svg" alt="facebook logo" class="facebook-img">
+        <img src="images/icon-twitter.svg" alt="twitter logo" class="twitter-img">
+        <img src="images/icon-instagram.svg" alt="instagram logo" class="instagram-img">
+      </div>
+ 
 </div>
-
   <p class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Raelinda Woad</a>.
