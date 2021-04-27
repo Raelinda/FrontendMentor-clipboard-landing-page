@@ -43,8 +43,9 @@ h2 {
 }
 
 h1 {
-    font-size: 1.75rem;
-}
+        font-size: 2.2rem;
+        margin-top: 3rem;
+    }
 
 h2 {
     font-size: 1.8rem;
@@ -132,10 +133,6 @@ header {
     margin: 0 auto;
 }
 
-.header__title {
-    font-size: 2.2rem;
-    margin-top: 3rem;
-}
 
 /* Section-one */
 .desktop-img {
@@ -206,6 +203,7 @@ footer {
 .social-media {
     margin-top: 1rem;
 }
+
 .social-media>* {
     font-size: 2rem;
     color: var(--Dark-Grayish-Blue);
@@ -234,9 +232,8 @@ footer {
 =====================*/
 @media (min-width: 37.5em) {
     h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
-
     h2 {
         font-size: 2.25rem;
     }
@@ -260,10 +257,6 @@ footer {
         background: url('images/bg-header-desktop.png') no-repeat top;
         min-height: auto;
         padding: 3rem 0 0;
-    }
-
-    .header__title {
-        font-size: 3rem;
     }
 
     .nav__list {
@@ -350,7 +343,6 @@ footer {
 
     header {
         justify-content: flex-start;
-        min-width: 100vw;
         padding: 10rem 0 5rem;
     }
 
