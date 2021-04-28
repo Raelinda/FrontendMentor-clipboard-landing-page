@@ -137,7 +137,7 @@ h2 {
     text-decoration: none;
 }
 
-.btn-ios {
+.btn--ios {
     background: var(--Strong-Cyan);
     border-radius: 100px;
     box-shadow: 0 2px 0 2px var(--Strong-Cyan-shadow);
@@ -145,12 +145,12 @@ h2 {
     width: 100%;
 }
 
-.btn-ios:hover,
-.btn-ios:focus {
+.btn--ios:hover,
+.btn--ios:focus {
     opacity: 65%;
 }
 
-.btn-mac {
+.btn--mac {
     background: var(--Light-Blue);
     border-radius: 100px;
     box-shadow: 0 2px 0 2px var(--Light-Blue-Shadow);
@@ -158,8 +158,8 @@ h2 {
     width: 100%;
 }
 
-.btn-mac:hover,
-.btn-mac:focus {
+.btn--mac:hover,
+.btn--mac:focus {
     opacity: 65%;
 }
 
