@@ -10,8 +10,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <script src="https://kit.fontawesome.com/9bbedcefb2.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Clipboard landing page</title>
-
-
 </head>
 
 <body>
@@ -19,65 +17,56 @@
   <header>
     <img src="images/logo.svg" alt="copyright symbol" class="logo-img">
     <div class="header__content">
-      <h1 class="header__title">A history of everything you copy</h1>
+      <h1>A history of everything you copy</h1>
       <p>
         Clipboard allows you to track and organize everything you
         copy. Instantly access your clipboard on all your devices.
       </p>
-      <div class="buttons">
-        <a href="#" class="btn btn-ios">Download for iOS</a>
-        <a href="#" class="btn btn-mac">Download for Mac</a>
+      <div class="header__buttons">
+        <a href="#">Download for iOS</a>
+        <div class="btn btn--mac"><a href="#"">Download for Mac</a></div>
       </div>
     </div>
   </header>
   <main class="main">
     <section class="section-one">
-      <!-- <div class="container"> -->
       <h2 class="section__title">Keep track of your snippets</h2>
       <p>
         Clipboard instantly stores any item you copy in the cloud,
         meaning you can access your snippets immediately on all your
         devices. Our Mac and iOS apps will help you organize everything.
       </p>
-      <div class="section-one">
-        <div class="section-one--desktop">
-          <img src="images/image-computer.png" alt="desktop computer" class="desktop-img">
-          <aside class="sidebar">
-            <div class="sidebar__section">
-              <h2 class="sidebar__title">Quick Search</h2>
-              <p class="sidebar__text">Easily search your snippets by content, category, web address, application, and
-                more.
-              </p>
-            </div>
-            <div class="sidebar__section">
-              <h2 class="sidebar__title">iCloud Sync</h2>
-              <p class="sidebar__text">Instantly saves and syncs snippets across all your devices.</p>
-            </div>
-            <div class="sidebar__section">
-              <h2 class="sidebar__title">Complete History</h2>
-              <p class="sidebar__text">Retrieve any snippets from the first moment you started using the app.</p>
-            </div>
-          </aside>
+
+      <img src="images/image-computer.png" alt="desktop computer" class="desktop-img">
+
+      <aside class="sidebar">
+        <div class="sidebar__section">
+          <h2 class="sidebar__title">Quick Search</h2>
+          <p class="sidebar__text">Easily search your snippets by content, category, web address, application, and
+            more.
+          </p>
         </div>
-      </div>
-      <!-- </div> -->
+        <div class="sidebar__section">
+          <h2 class="sidebar__title">iCloud Sync</h2>
+          <p class="sidebar__text">Instantly saves and syncs snippets across all your devices.</p>
+        </div>
+        <div class="sidebar__section">
+          <h2 class="sidebar__title">Complete History</h2>
+          <p class="sidebar__text">Retrieve any snippets from the first moment you started using the app.</p>
+        </div>
+      </aside>
     </section>
 
-
     <section class="section-two">
-      <!-- <div class="container"> -->
       <h2 class="section__title">Access Clipboard anywhere</h2>
-
       <p>
         Whether you’re on the go, or at your computer, you can access all your Clipboard
         snippets in a few simple clicks.
       </p>
       <img src="images/image-devices.png" alt="mobile devices" class="devices-img">
-      <!-- </div> -->
     </section>
 
     <section class="section-three">
-      <!-- <div class="container"> -->
       <h2 class="section__title">Supercharge your workflow</h2>
       <p>We’ve got the tools to boost your productivity.</p>
       <div class="features">
@@ -109,11 +98,10 @@
         Available for free on the App Store. Download for Mac or iOS, sync with iCloud
         and you’re ready to start adding to your clipboard.
       </p>
-      <div class="buttons">
-        <a href="#" class="btn btn-ios">Download for iOS</a>
-        <a href="#" class="btn btn-mac">Download for Mac</a>
+      <div class="section-three__buttons">
+        <a href="#" class="btn--ios">Download for iOS</a>
+        <a href="#" >Download for Mac</a>
       </div>
-      <!-- </div> -->
     </section>
   </main>
   <footer>
@@ -150,3 +138,4 @@
 </body>
 
 </html>
+
