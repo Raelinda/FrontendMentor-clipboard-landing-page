@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="https://fonts.google.com/specimen/Bai+Jamjuree">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <script src="https://kit.fontawesome.com/9bbedcefb2.js" crossorigin="anonymous"></script>
@@ -15,8 +15,8 @@
 <body>
 
   <header>
-    <img src="images/logo.svg" alt="copyright symbol" class="logo-img">
     <div class="header__content">
+      <img src="images/logo.svg" alt="copyright symbol" class="logo-img">
       <h1>A history of everything you copy</h1>
       <p>
         Clipboard allows you to track and organize everything you
@@ -31,33 +31,33 @@
 
   <main>
     <section class="section-one">
-      
+
       <h2>Keep track of your snippets</h2>
       <p>
         Clipboard instantly stores any item you copy in the cloud,
         meaning you can access your snippets immediately on all your
         devices. Our Mac and iOS apps will help you organize everything.
       </p>
+      <div class="section-one__content">
+        <img src="images/image-computer.png" alt="desktop computer" class="desktop-img">
 
-      <img src="images/image-computer.png" alt="desktop computer" class="desktop-img">
-
-      <aside class="sidebar">
-        <div class="sidebar__section">
-          <h2 class="sidebar__title">Quick Search</h2>
-          <p class="sidebar__text">Easily search your snippets by content, category, web address, application, and
-            more.
-          </p>
-        </div>
-        <div class="sidebar__section">
-          <h2 class="sidebar__title">iCloud Sync</h2>
-          <p class="sidebar__text">Instantly saves and syncs snippets across all your devices.</p>
-        </div>
-        <div class="sidebar__section">
-          <h2 class="sidebar__title">Complete History</h2>
-          <p class="sidebar__text">Retrieve any snippets from the first moment you started using the app.</p>
-        </div>
-      </aside>
-
+        <aside class="sidebar">
+          <div class="sidebar__section">
+            <h2 class="sidebar__title">Quick Search</h2>
+            <p class="sidebar__text">Easily search your snippets by content, category, web address, application, and
+              more.
+            </p>
+          </div>
+          <div class="sidebar__section">
+            <h2 class="sidebar__title">iCloud Sync</h2>
+            <p class="sidebar__text">Instantly saves and syncs snippets across all your devices.</p>
+          </div>
+          <div class="sidebar__section">
+            <h2 class="sidebar__title">Complete History</h2>
+            <p class="sidebar__text">Retrieve any snippets from the first moment you started using the app.</p>
+          </div>
+        </aside>
+      </div>
     </section>
 
     <section class="section-two">
@@ -73,28 +73,31 @@
       <h2>Supercharge your workflow</h2>
       <p>We’ve got the tools to boost your productivity.</p>
       <div class="product-features">
-        <div class="product-features__content">
-          <img src="images/icon-blacklist.svg" alt="list" class="blacklist-img">
+        <div class="product-features__section">
+          <img src="images/icon-blacklist.svg" alt="list" class="product-features__img">
           <h3>Create blacklists</h3>
           <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
         </div>
-        <div class="product-features__content">
-          <img src="images/icon-text.svg" alt="an example of unformatted text" class="text-img">
+        <div class="product-features__section">
+          <img src="images/icon-text.svg" alt="an example of unformatted text" class="product-features__img">
           <h3>Plain text snippets</h3>
           <p>Remove unwanted formatting from copied text for a consistent look.</p>
         </div>
-        <div class="product-features__content">
-          <img src="images/icon-preview.svg" alt="an eye" class="preview-img">
+        <div class="product-features__section">
+          <img src="images/icon-preview.svg" alt="an eye" class="product-features__img">
           <h3>Sneak preview</h3>
           <p>Quick preview of all snippets on your Clipboard for easy access.</p>
         </div>
       </div>
       <div class="company-logos">
-        <img src="images/logo-google.png" alt="google logo" class="company-logos__img">
-∫        <img src="images/logo-microsoft.png" alt="microsoft logo" class="company-logos__img">
-        <img src="images/logo-hp.png" alt="hewlett packard logo" class="company-logos__img">
-        <img src="images/logo-vector-graphics.png" alt="vector graphics logo" class="company-logos__img">
+        <div class="company-logos__img"><img src="images/logo-google.png" alt="google logo"></div>
+        <div class="company-logos__img"><img src="images/logo-ibm.png" alt="google logo"></div>
+        <div class="company-logos__img"><img src="images/logo-microsoft.png" alt="microsoft logo"></div>
+        <div class="company-logos__img"><img src="images/logo-hp.png" alt="hewlett packard logo"></div>
+        <div class="company-logos__img"><img src="images/logo-vector-graphics.png" alt="vector graphics logo"></div>
       </div>
+    </section>
+    <section class="section-four">
       <h2>Clipboard for iOS and Mac OS</h2>
       <p>
         Available for free on the App Store. Download for Mac or iOS, sync with iCloud
@@ -112,15 +115,15 @@
       <nav class="navbar">
         <ul class="nav__list">
           <div class="nav__list__col">
-            <li class="list__item"><a href="#">FAQs</a></li>
-            <li class="list__item"><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Contact Us</a></li>
           </div>
           <div class="nav__list__col">
-            <li class="list__item"><a href="#">Privacy Policy</a></li>
-            <li class="list__item"><a href="#">Press Kit</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Press Kit</a></li>
           </div>
           <div class="nav__list__col">
-            <li class="list__item"><a href="">Install Guide</a></li>
+            <li><a href="">Install Guide</a></li>
           </div>
         </ul>
       </nav>
@@ -129,8 +132,9 @@
         <a href="#"><i class="fab fa-twitter"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
       </div>
-
     </div>
+
+
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="https://github.com/Raelinda">Raelinda Woad</a>.
@@ -140,4 +144,3 @@
 </body>
 
 </html>
-
