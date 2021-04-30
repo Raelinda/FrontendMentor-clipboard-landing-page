@@ -130,8 +130,8 @@ h1 {
 
 h2 {
   font-size: 1.7rem;
-  max-width: 80%;
   margin: 0 auto;
+  max-width: 80%;
 }
 
 h3 {
@@ -141,13 +141,13 @@ h3 {
 .buttons {
   display: flex;
   flex-direction: column;
-  width: min(100%, 20em);
   margin: 1em auto 0;
+  width: min(100%, 20em);
 }
 
 .btn {
-  display: block;
   color: #fff;
+  display: block;
   margin-top: 1.5em;
   text-decoration: none;
 }
@@ -182,10 +182,10 @@ section,
 .footer__content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: min(95%, 76.25em);
+  justify-content: center;
   margin: 0 auto;
+  width: min(95%, 76.25em);
 }
 
 section {
@@ -193,8 +193,8 @@ section {
 }
 
 p {
-  max-width: 90%;
   margin: .75em auto 0;
+  max-width: 90%;
 }
 
 /* ======
@@ -209,8 +209,8 @@ header {
 .header__content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin: 0 auto;
   min-height: 100vh;
   width: min(95%, 76.25em);
@@ -221,6 +221,7 @@ header {
   display: flex;
   flex-direction: column;
 }
+
 .desktop-img {
   margin: 3rem auto;
 }
@@ -263,8 +264,8 @@ header {
 
 .company-logos__img {
   display: flex;
-  justify-content: center;
   flex-basis: 15rem;
+  justify-content: center;
   margin-bottom: 2rem;
 }
 
@@ -276,9 +277,11 @@ footer {
   background: #eee;
   margin-top: 4rem;
 }
+
 .footer__content {
   padding: 2rem 0;
 }
+
 .logo-img--sm {
   width: 3rem;
 }
@@ -288,13 +291,16 @@ footer {
   flex-direction: column;
   margin-top: 2em;
 }
-.nav__list__col{
+
+.nav__list__col {
   display: flex;
   flex-direction: column;
 }
+
 li {
   margin-top: 1em;
 }
+
 li a {
   color: var(--Dark-Grayish-Blue);
 }
@@ -303,11 +309,13 @@ li a:hover,
 li a:focus {
   color: var(--Strong-Cyan);
 }
+
 .social-media-links {
   display: flex;
   justify-content: space-between;
   margin-top: 1em;
 }
+
 .social-media-links * {
   color: var(--Dark-Grayish-Blue);
   font-size: 2rem;
@@ -337,42 +345,51 @@ li a:focus {
 @media (min-width: 43.75em) {
   .buttons {
     flex-direction: row;
-    width: min(100%, 25em);
+    width: min(100%, 29em);
   }
+
   .btn--mac {
-    margin-left: 2em;
+    margin-left: 1em;
   }
+
   header {
     background: url('images/bg-header-desktop.png') no-repeat center;
     background-size: cover;
   }
+
   .header__content {
     min-height: auto;
     padding: 5rem 0;
   }
+
   .product-features__section {
     flex-basis: 1%;
     flex-grow: 1;
   }
-  /* To create an equal distance between img-bottom and h3-top */
+
+  /* To create an equal distance between img-bottom and h3-top by making all the images the same height */
   .product-features__img {
     max-height: 2rem;
   }
+
   .company-logos {
     margin: 4.5rem 0;
   }
+
   .nav__list {
     display: flex;
     flex-direction: row;
     margin-top: 1em;
   }
-  .nav__list__col{
-  flex-direction: row;
-  margin-left: 1.5em;
-}
-.nav__list__col>*+* {
-  margin-left: 1.5rem;
-}  
+
+  .nav__list__col {
+    flex-direction: row;
+    margin-left: 1.5em;
+  }
+
+  .nav__list__col>*+* {
+    margin-left: 1.5rem;
+  }
 }
 
 
@@ -382,58 +399,82 @@ li a:focus {
   h1 {
     font-size: 3rem;
   }
+
   h2 {
     font-size: 2.5rem;
   }
+
   h3 {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
   }
+
   p {
     max-width: 40em;
   }
+
   section,
-.footer__content {
-  width: min(85%, 76.25em);
-  margin: 0 auto;
-}
+  .footer__content {
+    margin: 0 auto;
+    width: min(85%, 76.25em);
+  }
+
   .section-one__content {
     flex-direction: row;
     align-items: center;
   }
-  .desktop-img {
-    margin: 6rem 6rem 0 -6rem;
-  }
-.sidebar * {
-  text-align: left;
-  margin: 0;
-}
 
-  .product-features >*+* {
-    margin-left: 1vw;
-    
+  .desktop-img {
+    margin: 6rem 5vw 0 -21vw;
   }
+
+  .sidebar * {
+    margin: 0;
+    text-align: left;
+  }
+  .sidebar__title {
+  font-size: 3vw;
+}
+.sidebar p {
+  max-width: 21em;
+}
+  .section-two,
+  .section-three {
+    margin-top: 5rem;
+  }
+
+  .product-features>*+* {
+    margin-left: 1vw;
+
+  }
+
   .product-features__img {
     height: auto;
   }
+
   .company-logos {
     justify-content: space-between;
   }
+
   .company-logos__img {
     flex-basis: 8em;
   }
-.footer__content {
-   flex-direction: row;
-   justify-content: space-between;
- }
- .navbar {
-margin: 0 auto 0 6vw;
- }
+
+  .footer__content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navbar {
+    margin: 0 auto 0 6vw;
+  }
+
   .nav__list__col {
     flex-direction: column;
-    text-align: left;
     margin-left: 3em;
+    text-align: left;
   }
-    .nav__list__col>*+* {
-      margin-left: 0;
-    } 
+
+  .nav__list__col>*+* {
+    margin-left: 0;
+  }
 }
